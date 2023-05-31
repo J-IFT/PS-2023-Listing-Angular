@@ -1,0 +1,17 @@
+<div *ngIf="product">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" [(ngModel)]="product.nom" [disabled]="isEditing">
+  
+    <label for="texture">Texture :</label>
+    <input type="text" id="texture" [(ngModel)]="product.texture" [disabled]="isEditing">
+  
+    <label for="grammage">Grammage :</label>
+    <input type="text" id="grammage" [(ngModel)]="product.grammage" [disabled]="isEditing">
+  
+    <label for="couleur">Couleur :</label>
+    <input type="text" id="couleur" [(ngModel)]="product.couleur" [disabled]="isEditing">
+  
+    <button type="button" (click)="updateProduct()" [disabled]="isEditing">Mettre à jour</button>
+    <button (click)="cancel()" [disabled]="isEditing">Annuler</button>
+    <button (click)="save()">Valider</button>
+</div>  

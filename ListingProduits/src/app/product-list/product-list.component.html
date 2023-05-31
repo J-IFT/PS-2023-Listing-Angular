@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let product of products" (click)="selectProduct(product)" [class.selected]="product === selectedProduct">
+      {{ product.nom }}
+    </li>
+</ul>  
+
+<app-product-detail [product]="selectedProduct" [isEditing]="isEditing"></app-product-detail>

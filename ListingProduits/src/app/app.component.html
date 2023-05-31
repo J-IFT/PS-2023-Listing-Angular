@@ -1,0 +1,12 @@
+<h1>Gestion des produits</h1>
+
+<div>
+  <h2>Liste des produits</h2>
+  <app-product-list></app-product-list>
+  <button (click)="showProductForm()">Ajouter</button>
+</div>
+
+<div>
+  <h2>Détail du produit</h2>
+  <app-product-detail *ngIf="selectedProduct" [product]="selectedProduct"></app-product-detail>
+</div>
