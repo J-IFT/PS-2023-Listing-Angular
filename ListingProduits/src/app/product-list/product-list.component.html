@@ -17,16 +17,16 @@
   <h2>Ajouter un produit</h2>
   <form>
     <label for="nom">Nom</label>
-    <input type="text" id="nom" [(ngModel)]="newProduct.nom">
+    <input type="text" id="nom" name="nom" [(ngModel)]="newProduct.nom">
 
     <label for="texture">Texture</label>
-    <input type="text" id="texture" [(ngModel)]="newProduct.texture">
+    <input type="text" id="texture" name="texture" [(ngModel)]="newProduct.texture">
 
     <label for="grammage">Grammage</label>
-    <input type="text" id="grammage" [(ngModel)]="newProduct.grammage">
+    <input type="text" id="grammage" name="grammage" [(ngModel)]="newProduct.grammage">
 
     <label for="couleur">Couleur</label>
-    <input type="text" id="couleur" [(ngModel)]="newProduct.couleur">
+    <input type="text" id="couleur" name="couleur" [(ngModel)]="newProduct.couleur">
 
     <div>
       <button type="button" (click)="addProduct()">Ajouter</button>
