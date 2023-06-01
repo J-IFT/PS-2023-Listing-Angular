@@ -1,7 +1,36 @@
 <ul>
-    <li *ngFor="let product of products" (click)="selectProduct(product)" [class.selected]="product === selectedProduct">
-      {{ product.nom }}
-    </li>
-</ul>  
+  <li *ngFor="let product of products" (click)="selectProduct(product)" [class.selected]="product === selectedProduct">
+    {{ product.nom }}
+  </li>
+</ul>
 
-<app-product-detail [product]="selectedProduct" [isEditing]="isEditing"></app-product-detail>
+<div>
+  <button type="button" (click)="showProductForm()">Ajouter un produit</button>
+</div>
+
+<div *ngIf="selectedProduct && !isEditing">
+  <h2>Détail du produit</h2>
+  <app-product-detail [product]="selectedProduct"></app-product-detail>
+</div>
+
+<div *ngIf="isEditing">
+  <h2>Ajouter un produit</h2>
+  <form>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" [(ngModel)]="newProduct.nom">
+
+    <label for="texture">Texture</label>
+    <input type="text" id="texture" [(ngModel)]="newProduct.texture">
+
+    <label for="grammage">Grammage</label>
+    <input type="text" id="grammage" [(ngModel)]="newProduct.grammage">
+
+    <label for="couleur">Couleur</label>
+    <input type="text" id="couleur" [(ngModel)]="newProduct.couleur">
+
+    <div>
+      <button type="button" (click)="addProduct()">Ajouter</button>
+      <button type="button" (click)="cancelAdd()">Annuler</button>
+    </div>
+  </form>
+</div>
