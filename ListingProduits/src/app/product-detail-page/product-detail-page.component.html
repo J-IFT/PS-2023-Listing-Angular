@@ -1,0 +1,17 @@
+<h2>Détail du produit</h2>
+<div *ngIf="product">
+  <label>Nom:</label>
+  <input [(ngModel)]="product.nom" placeholder="Nom du produit" />
+
+  <label>Texture:</label>
+  <input [(ngModel)]="product.texture" placeholder="Texture du produit" />
+
+  <label>Grammage:</label>
+  <input [(ngModel)]="product.grammage" placeholder="Grammage du produit" />
+
+  <label>Couleur:</label>
+  <input [(ngModel)]="product.couleur" placeholder="Couleur du produit" />
+
+  <button (click)="saveProduct()">Enregistrer</button>
+  <button (click)="goBack()">Retour</button>
+</div>

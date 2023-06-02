@@ -1,0 +1,23 @@
+form {
+    margin-top: 20px;
+  }
+  
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input {
+width: 200px;
+margin-bottom: 10px;
+}
+
+button {
+padding: 5px 10px;
+background-color: blueviolet;
+color: #fff;
+border: none;
+cursor: pointer;
+display: block;
+margin-top: 10px;
+}  

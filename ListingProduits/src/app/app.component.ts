@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 
 @Component({
   selector: 'app-root',
