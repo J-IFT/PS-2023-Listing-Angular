@@ -4,7 +4,7 @@
 
 Février 2023
 
-Groupe : Juliette & Brice + Flavien
+Groupe : Juliette + Flavien
 
 Autre Github sur lequel on a travaillé au début : https://github.com/flaviengrs/B3-2023-Angular-GROS-INFANTI-TRAPPLER
 
